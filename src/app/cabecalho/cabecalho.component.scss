@@ -3,23 +3,56 @@
 mat-toolbar {
     background-color: $cor-principal;
     color: $branco;
+
     .container {
         width: 1140px;
         display: flex;
         margin: auto;
+        align-items: center;
+
         h1 {
+            text-align: center;
             font-family: $fonte-principal;
-            font-size: $grande;
-            color: $branco;
-            padding-top: 15px; 
+            font-weight: normal;
+            font-size: 2vw;
+            margin: 0 auto;
+            border-radius: 10px;
+            text-transform: uppercase;
+            background-image: linear-gradient(#d30cb8, #6df1d8, #5c2c6d);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         }
+
+        h1::before {
+            content: '🌴 ';
+        }
+
+        h1::after {
+            content: ' 🎮';
+        }
+
         .menu-spacer {
             flex: 1 1 auto;
         }
+
         button {
-            margin-top: 10px;
+
+            font-family: $fonte-secundaria, cursive;
+            font-size: 1vw;
+            color: $cor-secundaria;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 17.5%;
+
             &:hover {
-                color: $cor-secundaria;
+                background: #333;
+                color: #fff;
+                -moz-box-shadow: 0 3px 10px 0 #CCC;
+                -webkit-box-shadow: 0 3px 10px 0 #ccc;
+                text-shadow: 0px 0px 5px #fff;
+                border-radius: 5px;
             }
         }
     }

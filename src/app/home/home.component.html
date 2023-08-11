@@ -2,63 +2,62 @@
     <h1> Olá {{ nome + " " + sobrenome }}!</h1>
     <!-- <h2>{{ data | date : 'dd    /MM/YYYY' }}</h2> -->
     <section id="imoveis-favoritos">
-        <h2>Confira aqui os seus imóveis favoritos:</h2>
-        <mat-grid-list cols="3" rowHeight="3:4">
-            <div *ngFor="let imovel of imoveis; let i = index">
-                <mat-grid-tile *ngIf="imovel.favorito">
-                    <mat-card>
-                        <img mat-card-image [src]="imovel.foto" [alt]="imovel.titulo" />
-                        <mat-card-content>
-                            <h3>{{ imovel.titulo }}</h3>
-                            <ul>
-                                <li>Quartos: {{ imovel.quartos }}</li>
-                                <li>Banheiros: {{ imovel.banheiros }}</li>
-                                <li>Metragem: {{ imovel.area }} m²</li>
-                                <li>Preço: {{ imovel.preco | currency }}</li>
-                            </ul>
-                        </mat-card-content>
-                        <mat-card-actions>
-                            <button
-                                [class]="imovel.favorito === false ? 'favorite' : 'favorite-checked'"
-                                [title]="imovel.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
-                                mat-button
-                                (click)="toogleFavorito(i)">
-                            <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
-                        </button> 
-                            <button mat-button (click)="verDetalhes(imovel.id)">Mais detalhes</button>
-                        </mat-card-actions>
-                    </mat-card>
-                </mat-grid-tile>
-            </div>
-        </mat-grid-list>
-    </section>
-    <section id="lista-imoveis">
-        <h2>Todos os imoveis:</h2>
-        <mat-grid-list cols="3" rowHeight="3:4">
-            <mat-grid-tile *ngFor="let imovel of imoveis; let i = index">
+        <h2>Confira aqui os seus jogos favoritos:</h2>
+        <mat-grid-list cols="3" rowHeight="3:6">
+            <mat-grid-tile *ngFor="let jogo of jogos; let i = index">
                 <mat-card>
-                    <img mat-card-image [src]="imovel.foto" [alt]="imovel.titulo" />
+                    <img mat-card-image [src]="jogo.foto" [alt]="jogo.titulo" />
                     <mat-card-content>
-                        <h3>{{ imovel.titulo }}</h3>
+                        <h3>{{ jogo.titulo }}</h3>
                         <ul>
-                            <li>Quartos: {{ imovel.quartos }}</li>
-                            <li>Banheiros: {{ imovel.banheiros }}</li>
-                            <li>Metragem: {{ imovel.area }} m²</li>
-                            <li>Preço: {{ imovel.preco | currency }}</li>
+                            <li>Quartos: {{ jogo.quartos }}</li>
+                            <li>Banheiros: {{ jogo.banheiros }}</li>
+                            <li>Metragem: {{ jogo.area }} m²</li>
+                            <li>Preço: {{ jogo.preco | currency }}</li>
                         </ul>
                     </mat-card-content>
                     <mat-card-actions>
-                        <button
-                            [class]="imovel.favorito === false ? 'favorite' : 'favorite-checked'"
-                            [title]="imovel.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
-                            mat-button
-                            (click)="toogleFavorito(i)">
-                            <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
-                        </button> 
-                        <button mat-button (click)="verDetalhes(imovel.id)">Mais detalhes</button>
+                        <button [class]="jogo.favorito === false ? 'favorite' : 'favorite-checked'"
+                            [title]="jogo.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                            mat-button (click)="toogleFavorito(i)">
+                            <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon=⭐></mat-icon>
+                        </button>
+                        <button mat-button (click)="verDetalhes(jogo.id)">Mais detalhes</button>
+                    </mat-card-actions>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </section>
+    <section id="lista-jogos">
+        <h2>Todos os jogos:</h2>
+        <mat-grid-list cols="3" rowHeight="3:6">
+            <mat-grid-tile *ngFor="let jogo of jogos; let i = index">
+                <mat-card>
+                    <img mat-card-image [src]="jogo.foto" [alt]="jogo.titulo" />
+                    <mat-card-content>
+                        <h3>{{ jogo.titulo }}</h3>
+                        <ul>
+                            <li>Quartos: {{ jogo.quartos }}</li>
+                            <li>Banheiros: {{ jogo.banheiros }}</li>
+                            <li>Metragem: {{ jogo.area }} m²</li>
+                            <li>Preço: {{ jogo.preco | currency }}</li>
+                        </ul>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button [class]="jogo.favorito === false ? 'favorite' : 'favorite-checked'"
+                            [title]="jogo.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                            mat-button (click)="toogleFavorito(i)">
+                            <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon=⭐></mat-icon>
+                        </button>
+                        <button mat-button (click)="verDetalhes(jogo.id)">Mais detalhes</button>
                     </mat-card-actions>
                 </mat-card>
             </mat-grid-tile>
         </mat-grid-list>
     </section>
 </div>
+<script>
+    ScrollReveal().reveal('.box');
+    ScrollReveal().reveal('.container');
+</script>
+<script src="index.js"></script>

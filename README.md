@@ -1,7 +1,7 @@
-# Projeto Imobiliária Lar Feliz
+# Projeto PlayStation Paradise
 ## Projeto desenvolvido em Angular pela turma 1029
 
-![Print do projeto](https://i.ibb.co/5n4dtv9/Screenshot-2023-08-04-at-16-36-18.png)]
+![Print do projeto](INSERIR LINK)
 
 Este é um projeto desenvolvido em Angular pela turma 1029 da Start Tech TOTVS durante o módulo 03.
 
@@ -9,14 +9,15 @@ Este é um projeto desenvolvido em Angular pela turma 1029 da Start Tech TOTVS d
 - Angular
 - SCSS
 - Material UI
+- Bootstrap
 
 ## Instalação
 Angular precisa do [Node.js](https://nodejs.org/) v16+ para funcionar.
 
 Clonar o repositório e entrar na pasta do projeto
 ```sh
-git clone https://github.com/roofranklin/angular_01.git
-cd angular_01
+git clone https://github.com/guzius/INSERIR NOME.git
+cd INSERIR NOME
 ```
 
 Instalar o Angular de maneira global em sua máquina:

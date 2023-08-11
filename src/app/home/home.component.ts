@@ -17,23 +17,23 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  verDetalhes(imovelId: string) {
-    this.router.navigate(['/detalhes', imovelId]);
+  verDetalhes(jogoId: string) {
+    this.router.navigate(['/detalhes', jogoId]);
   }
 
   toogleFavorito(index: number): void {
-    this.imoveis[index].favorito = !this.imoveis[index].favorito
+    this.jogos[index].favorito = !this.jogos[index].favorito
   }
 
 
-  nome: string = 'Pedro';
-  sobrenome: string = 'dos Santos';
+  nome: string = 'Gustavo';
+  sobrenome: string = 'Sotrati';
   data: any = new Date();
-  imoveis: Array<any> = [
+  jogos: Array<any> = [
     {
       id: 1,
-      titulo: 'Casa Magnífica',
-      foto: 'https://i.ibb.co/JKzFtzj/casa.jpg',
+      titulo: 'ALIEN TRILOGY',
+      foto: 'https://i.ibb.co/JChHpJf/Alien-Trilogy.jpg',
       quartos: 4,
       banheiros: 3,
       area: 360,
@@ -42,8 +42,8 @@ export class HomeComponent {
     },
     {
       id: 2,
-      titulo: 'Apartamento Padrão',
-      foto: 'https://i.ibb.co/tmsG61R/apartamento.jpg',
+      titulo: 'MORTAL KOMBAT TRILOGY',
+      foto: 'https://i.ibb.co/bRTH5qD/Mortal-Kombat-Trilogy.jpg',
       quartos: 2,
       banheiros: 1,
       area: 45,
@@ -52,8 +52,8 @@ export class HomeComponent {
     },
     {
       id: 3,
-      titulo: 'Casa de Campo',
-      foto: 'https://i.ibb.co/5h1XHzY/casa-de-campo.jpg',
+      titulo: 'DISNEYS HERCULES',
+      foto: 'https://i.ibb.co/hyNf5B7/Disney-s-Hercules.jpg',
       quartos: 7,
       banheiros: 5,
       area: 800,
@@ -62,8 +62,8 @@ export class HomeComponent {
     },
     {
       id: 4,
-      titulo: 'Flat Minimalista',
-      foto: 'https://i.ibb.co/FqSpsYt/flat.jpg',
+      titulo: 'RAMPAGE WORLD TOUR',
+      foto: 'https://i.ibb.co/zs3yC9s/Rampage-World-Tour.jpg',
       quartos: 1,
       banheiros: 1,
       area: 36,
@@ -71,9 +71,9 @@ export class HomeComponent {
       favorito: false
     },
     {
-      id: "rg93h8eirbgrebngn",
-      titulo: 'Sala Comercial',
-      foto: 'https://i.ibb.co/2nNsFkt/sala-comercial.jpg',
+      id: "5",
+      titulo: 'MORTAL KOMBAT MYTHOLOGIES SUB-ZERO',
+      foto: 'https://i.ibb.co/zxvpHNg/Mortal-Kombat-Mythologies-Sub-Zero.jpg',
       quartos: 0,
       banheiros: 1,
       area: 25,
@@ -81,9 +81,9 @@ export class HomeComponent {
       favorito: true
     },
     {
-      id: "8493ty34hg489gh",
-      titulo: 'Cobertura Duplex',
-      foto: 'https://i.ibb.co/pPHQfW2/cobertura.jpg',
+      id: "6",
+      titulo: 'NIGHTMARE CREATURES',
+      foto: 'https://i.ibb.co/TrtjWM9/Nightmare-Creatures.jpg',
       quartos: 3,
       banheiros: 3,
       area: 200,

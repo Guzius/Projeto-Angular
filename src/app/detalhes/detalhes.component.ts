@@ -10,11 +10,12 @@ export class DetalhesComponent implements OnInit {
 
   imovelId: string;
 
-  titulo: string = 'Casa Magnífica';
-  foto: string = 'https://i.ibb.co/JKzFtzj/casa.jpg';
+  titulo: string = '';
+  foto: string = 'https://i.ibb.co/ZXRhw3D/pngwing-com.png';
 
-  description: string = 'Bem-vindo(a) ao seu futuro lar! Esta magnífica casa de 4 quartos, com duas suítes, é a oportunidade perfeita para você e sua família desfrutarem de uma vida confortável e elegante. Com seus generosos 4 quartos, esta casa oferece amplo espaço para acomodar toda a família. Além disso, duas suítes privativas garantem o máximo de conforto e privacidade para os moradores. A sala de estar espaçosa e aconchegante é perfeita para momentos de lazer em família ou para receber amigos. O ambiente proporciona um cenário ideal para desfrutar de noites agradáveis e descontraídas.';
-  description2: string = 'Essa casa representa uma oportunidade imperdível para conquistar um lar que combina conforto, elegância e praticidade em uma localização privilegiada. Não perca tempo e agende uma visita hoje mesmo!';
+  description: string = 'O PlayStation 1 trouxe uma revolução aos videogames quando foi lançado pela Sony em 1994. Com gráficos inovadores e uma experiência imersiva, ele abriu novos horizontes no entretenimento digital.';
+  description2: string = 'Seu catálogo diversificado apresentava uma ampla gama de gêneros, desde aventuras épicas como "Final Fantasy VII" até plataformas icônicas como "Crash Bandicoot". Jogos de terror como "Resident Evil" e corridas emocionantes em "Gran Turismo" também faziam parte da seleção.';
+  description3: string = 'Esses jogos não apenas moldaram a indústria, mas também permanecem como clássicos adorados até hoje, lembrando-nos do impacto duradouro do PS1 na história dos videogames.';
   warnings: string = 'Nota: A disponibilidade e o preço estão sujeitos a alterações. Entre em contato conosco para mais informações e agendamento de visitas.';
 
 

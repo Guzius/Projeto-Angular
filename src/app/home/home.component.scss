@@ -2,66 +2,87 @@
 
 .container {
     width: 1140px;
-    display: block;
+    height: 100%;
+    padding-bottom: 2%;
+    padding-top: 2%;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+
     h1 {
         padding-top: 20px;
-        font-family: $fonte-principal;
-        font-size: $grande;
-        color: $cor-principal;
+        font-family: $fonte-secundaria;
+        font-size: $media;
+        color: $cor-secundaria;
     }
+
     h2 {
-        font-family: $fonte-principal;
-        font-size: $grande;
-        color: $cor-principal;
-    }  
+        font-family: $fonte-secundaria;
+        font-size: $media;
+        color: $cor-secundaria;
+    }
+
     mat-grid-tile {
+
         mat-card {
-            background-color: $branco;
+            background-color: $preto;
             margin: 10px;
             box-shadow: $card-shadow;
             transition: $card-transition;
+            border: 1px solid black;
+
             &:hover {
                 box-shadow: $card-shadow-hover;
             }
+
             img {
                 width: 100%;
             }
+
             mat-card-content {
                 h3 {
-                    font-family: $fonte-principal;
                     font-size: $grande;
-                    color: $cinza-escuro;
                     padding-top: 15px;
+                    font-family: $fonte-principal;
+                    font-weight: normal;
+                    border-radius: 10px;
+                    text-transform: uppercase;
+                    background-image: linear-gradient(#d30cb8, #6df1d8, #5c2c6d);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
                 }
+
                 ul {
                     padding-top: 0px;
                     padding-left: 0px;
                     padding-bottom: 20px;
                     list-style-type: none;
+
                     li {
                         font-family: $fonte-secundaria;
-                        color: $cinza-medio;
+                        color: $cor-secundaria;
                         font-size: $media;
                         line-height: $grande;
                     }
                 }
             }
+
             mat-card-actions {
                 padding-bottom: 20px;
                 gap: 10px;
+
                 .favorite {
                     width: 20%;
                     background-color: $branco;
                     border: 1px solid $cor-principal;
-                    mat-icon {
-                        color: $cor-principal;
-                    }
                 }
+
                 .favorite-checked {
                     width: 20%;
                     background-color: $cor-principal;
                 }
+
                 button {
                     display: block;
                     width: 80%;
@@ -77,7 +98,28 @@
                 }
             }
         }
+
+        mat-card:hover {
+            animation: bounce 0.5s linear;
+          }
+          
+          @keyframes bounce {
+              20% {
+                      transform: translateY(-6px);
+              }
+              40% {
+                      transform: translateY(0px);
+              }
+          
+              80% {
+                      transform: translateY(-2px);
+              }
+              100% {
+                      transform: translateY(0);
+              }
+          }
     }
+
     #lista-imoveis {
         padding-top: 80px;
     }
