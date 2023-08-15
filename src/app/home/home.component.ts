@@ -34,61 +34,55 @@ export class HomeComponent {
       id: 1,
       titulo: 'ALIEN TRILOGY',
       foto: 'https://i.ibb.co/JChHpJf/Alien-Trilogy.jpg',
-      quartos: 4,
-      banheiros: 3,
-      area: 360,
-      preco: 990000,
-      favorito: true
+      lancamento: '29/02/1996',
+      genero: 'FPS',
+      estudio: 'Fox Interactive',
+      favorito: false
     },
     {
       id: 2,
       titulo: 'MORTAL KOMBAT TRILOGY',
       foto: 'https://i.ibb.co/bRTH5qD/Mortal-Kombat-Trilogy.jpg',
-      quartos: 2,
-      banheiros: 1,
-      area: 45,
-      preco: 120000,
+      lancamento: '10/10/1996',
+      genero: 'Luta',
+      estudio: 'Midway Games',
       favorito: false
     },
     {
       id: 3,
       titulo: 'DISNEYS HERCULES',
       foto: 'https://i.ibb.co/hyNf5B7/Disney-s-Hercules.jpg',
-      quartos: 7,
-      banheiros: 5,
-      area: 800,
-      preco: 1500000,
+      lancamento: '03/07/1997',
+      genero: 'Plataforma',
+      estudio: 'Disney Interactive',
       favorito: false
     },
     {
       id: 4,
-      titulo: 'RAMPAGE WORLD TOUR',
-      foto: 'https://i.ibb.co/zs3yC9s/Rampage-World-Tour.jpg',
-      quartos: 1,
-      banheiros: 1,
-      area: 36,
-      preco: 180000,
+      titulo: 'NIGHTMARE CREATURES',
+      foto: 'https://i.ibb.co/TrtjWM9/Nightmare-Creatures.jpg',
+      lancamento: '30/09/1997',
+      genero: 'Terror',
+      estudio: 'Activision',
       favorito: false
     },
     {
-      id: "5",
+      id: 5,
       titulo: 'MORTAL KOMBAT MYTHOLOGIES SUB-ZERO',
       foto: 'https://i.ibb.co/zxvpHNg/Mortal-Kombat-Mythologies-Sub-Zero.jpg',
-      quartos: 0,
-      banheiros: 1,
-      area: 25,
-      preco: 250000,
-      favorito: true
+      lancamento: '01/10/1997',
+      genero: 'Luta',
+      estudio: 'Midway Games',
+      favorito: false
     },
     {
-      id: "6",
-      titulo: 'NIGHTMARE CREATURES',
-      foto: 'https://i.ibb.co/TrtjWM9/Nightmare-Creatures.jpg',
-      quartos: 3,
-      banheiros: 3,
-      area: 200,
-      preco: 1500000,
-      favorito: true
-    }
+      id: 6,
+      titulo: 'RAMPAGE WORLD TOUR',
+      foto: 'https://i.ibb.co/zs3yC9s/Rampage-World-Tour.jpg',
+      lancamento: '21/10/1997',
+      genero: 'Ação',
+      estudio: 'Midway Games',
+      favorito: false
+    },
   ];
 }

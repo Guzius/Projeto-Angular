@@ -2,10 +2,42 @@
 
 html,
 body {
-    background-image: url(../assets/Imagens/1092728.jpg);
+    background-image: url(../src/assets/Imagens/1092728.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 767px)
+{
+  #menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    margin-top: 1%;
+    flex-wrap: wrap;
+  }
+  #menu {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: larger;
+    background-image: linear-gradient(#d30cb8, #6df1d8, #5c2c6d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    list-style: none;
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+  }
+  label {
+    color: white;
+    text-align: center;
+    font-size: small;
+    margin-top: 3%;
+}
 }
 
 body {
