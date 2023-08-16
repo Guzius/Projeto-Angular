@@ -2,22 +2,59 @@
 
 .container {
     width: 1140px;
-    min-height: calc(100vh - 226px);
-    display: block;
     margin: auto;
-    h1 {
-        font-family: $fonte-principal;
-        font-size: $grande;
-        line-height: $extra-grande;
-        padding-top: 20px;
-        color: $cor-principal;
-    } 
+    min-height: calc(100vh - 224px);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    justify-content: flex-start;
+
+    h2 {
+        padding: 30px;
+        font-size: 32px;
+        line-height: 32px;
+        font-family: "Aero";
+        font-weight: normal;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background-image: linear-gradient(#d30cb8, #6df1d8, #5c2c6d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
     form {
         mat-form-field {
             display: block;
             font-family: $fonte-secundaria;
             font-size: $media;
         }
+
+        mat-error {
+            color: $cor-secundaria;
+            font-family: $fonte-secundaria;
+            font-size: $pequena;
+        }
+
+        mat-label {
+            color: $cor-secundaria;
+            font-family: $fonte-secundaria;
+            font-size: $pequena;
+        }
+
+        mat-select {
+            color: $cor-secundaria;
+            font-family: $fonte-secundaria;
+            font-size: $pequena;
+        }
+
+        mat-option {
+            color: $cor-secundaria;
+            font-family: $fonte-secundaria;
+            font-size: $pequena;
+        }
+        
         button {
             display: block;
             background-color: $cor-principal;
@@ -29,12 +66,45 @@
             width: 100%;
             height: 48px;
             cursor: pointer;
+            font-family: $fonte-secundaria;
+
             &:hover {
-                background-color: #FF1234;
+                background-color: $cor-secundaria;
             }
+
             &:disabled {
                 cursor: not-allowed;
             }
         }
+    }
+}
+
+.contato-details {
+    gap: 30px;
+    align-items: center;
+
+    p {
+        font-family: $fonte-secundaria;
+        color: $cor-secundaria;
+        font-size: $media;
+        line-height: $grande;
+        padding-bottom: 3%;
+    }
+
+    .red {
+        background: #333;
+        color: #fff;
+        padding: 0.5%;
+        border-radius: 5px;
+    }
+
+    #red1 {
+        text-align: center;
+        margin: 5%;
+        background-image: linear-gradient(#d30cb8, #6df1d8, #5c2c6d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 1.5vw;
     }
 }

@@ -1,31 +1,51 @@
 <div class="container">
-    <h1>FALE CONOSCO</h1>
-    <form (ngSubmit)="submitForm()">
-        <mat-form-field>
-            <mat-label>Digite seu nome:</mat-label>
-            <input matInput placeholder="Fulano da Silva" [formControl]="nome" required />
-            <mat-error *ngIf="nome.invalid">{{ getErrorMessage() }}</mat-error>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>Digite seu e-mail:</mat-label>
-            <input matInput placeholder="email@email.com" [formControl]="email" required>
-            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>Selecione um assunto</mat-label>
-            <mat-select [formControl]="assunto">
-                <mat-option value="vendas">Tenho interesse em um imóvel</mat-option>
-                <mat-option value="suporte">Quero fazer uma reclamação</mat-option>
-                <mat-option value="rh">Quero trabalhar na Lar Feliz</mat-option>
-            </mat-select>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>Digite sua mensagem</mat-label>
-            <textarea matInput [formControl]="mensagem"></textarea>
-            <mat-error *ngIf="mensagem.invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-        <button mat-button [disabled]="(nome.invalid || email.invalid || mensagem.invalid ? 'true' : '')" type="submit">
-            Enviar
-        </button>
-    </form>
+    <h2>FALE CONOSCO</h2>
+    <section class="contato-details">
+        <p>
+            Entre em contato conosco para tirar qualquer dúvida referente
+            aos nossos produtos ou receber suporte personalizado.
+            <br>
+            <br>
+            Whats App: (11) 94374-0808
+            <br>
+            <br>
+            E-mail Oficial: contato@playstationparadise.com
+            <br>
+            <br>
+            Atendimento de segunda a sexta, das 09:00h às 17:00h e sábado
+            das 09:00h às 13:00h (exceto em feriados nacionais).
+            <br>
+            <br>
+            Ou se quiser, envie uma mensagem:
+        </p>
+        <form (ngSubmit)="submitForm()">
+            <mat-form-field>
+                <mat-label>Digite seu nome:</mat-label>
+                <input matInput placeholder="Digite seu nome..." [formControl]="nome" required />
+                <mat-error *ngIf="nome.invalid">{{ getErrorMessage() }}</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Digite seu e-mail:</mat-label>
+                <input matInput placeholder="Digite seu E-Mail..." [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Selecione um assunto</mat-label>
+                <mat-select [formControl]="assunto">
+                    <mat-option value="vendas">Tenho interesse em um jogo ou produto</mat-option>
+                    <mat-option value="suporte">Quero fazer uma reclamação</mat-option>
+                    <mat-option value="rh">Quero trabalhar na PlayStation Paradise</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Digite sua mensagem</mat-label>
+                <textarea matInput [formControl]="mensagem"></textarea>
+                <mat-error *ngIf="mensagem.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <button mat-button [disabled]="(nome.invalid || email.invalid || mensagem.invalid ? 'true' : '')"
+                type="submit">
+                Enviar
+            </button>
+        </form>
+    </section>
 </div>

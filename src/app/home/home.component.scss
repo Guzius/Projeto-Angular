@@ -8,6 +8,7 @@
     margin: auto;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
+    display: block;
 
     h1 {
         padding-top: 20px;
@@ -24,7 +25,6 @@
 
     mat-grid-tile {
 
-
         mat-card {
             background-color: $preto;
             margin: 10px;
@@ -39,7 +39,7 @@
             img {
                 width: 100%;
             }
-            
+
             mat-card-content {
                 h3 {
                     font-size: $grande;
@@ -102,27 +102,29 @@
 
         mat-card:hover {
             animation: bounce 0.5s linear;
-          }
-          
-          @keyframes bounce {
-              20% {
-                      transform: translateY(-6px);
-              }
-              40% {
-                      transform: translateY(0px);
-              }
-          
-              80% {
-                      transform: translateY(-2px);
-              }
-              100% {
-                      transform: translateY(0);
-              }
-          }
+        }
+
+        @keyframes bounce {
+            20% {
+                transform: translateY(-6px);
+            }
+
+            40% {
+                transform: translateY(0px);
+            }
+
+            80% {
+                transform: translateY(-2px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
     }
 
-    #lista-imoveis {
-        padding-top: 80px;
+    #lista-jogos {
+        padding: 0;
     }
 
 }
@@ -138,14 +140,14 @@
             font-size: $pequena;
             color: $cor-secundaria;
         }
-    
+
         h2 {
             font-family: $fonte-secundaria;
             font-size: $pequena;
             color: $cor-secundaria;
         }
     }
-    
+
 }
 
 @media (max-width: 600px) {
@@ -153,5 +155,5 @@
     .container {
         padding-top: 15%;
     }
-    
+
 }

@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class QuemSomosComponent implements OnInit {
 
-  imovelId: string;
+  jogoId: string;
 
   titulo: string = '';
   foto: string = 'https://i.ibb.co/28Cmz6g/7d85cdabd079641f5c36a71042107e97.jpg';
@@ -27,7 +27,7 @@ export class QuemSomosComponent implements OnInit {
 
   ngOnInit() {
     this.router.paramMap.subscribe(params => {
-      this.imovelId = params.get('id') ?? '';
+      this.jogoId = params.get('id') ?? '';
     });
   }
   
